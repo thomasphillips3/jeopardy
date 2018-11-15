@@ -22,7 +22,7 @@ class App extends Component {
                         <div key={category.id}>
                             <Link 
                                 to='/category'
-                                onClick={() => this.props.pickCategory()}>
+                                onClick={() => this.props.pickCategory(category)}>
                                 <h4>{category.title}</h4>
                             </Link>
                         </div>

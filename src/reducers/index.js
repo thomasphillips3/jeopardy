@@ -4,7 +4,7 @@ import { combineReducers } from 'redux';
 function categories(state = [], action) {
     switch(action.type) {
         case SET_CATEGORIES:
-            return action.categories
+            return action.categories;
         default:
             return state;
     }
@@ -13,7 +13,7 @@ function categories(state = [], action) {
 function category(state = {}, action) {
     switch(action.type) {
         case PICK_CATEGORY:
-            return action.category
+            return action.category;
         default:
             return state;
     }
